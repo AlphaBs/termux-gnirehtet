@@ -1,5 +1,5 @@
 #!/bin/sh
 
-git clone https://github.com/Genymobile/gnirehtet
-cargo build --release --manifest-path="./gnirehtet/relay-rust/Cargo.toml"
-cp ./gnirehtet/relay-rust/target/release/gnirehtet ./gnirehtet
+git clone https://github.com/Genymobile/gnirehtet gnirehtet-repo
+cargo build --release --manifest-path="./gnirehtet-repo/relay-rust/Cargo.toml"
+cp ./gnirehtet-repo/relay-rust/target/release/gnirehtet ./gnirehtet

@@ -18,7 +18,7 @@ export TERMUX_ADB;
 pkg install fakeroot || exit;
 
 if [ ! "$TERMUX_ADB" ]; then
-    TERMUX_ADB="termux-adb";
+    TERMUX_ADB="$(command -v termux-adb)"
 fi
 
 if [ ! -f "$TERMUX_ADB" ]; then
