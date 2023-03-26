@@ -44,11 +44,11 @@ To build relay server:
 1. Install [cargo](https://rustup.rs/) to build Rust.
 2. Run `build-gnirehtet` script.
 
-The compiled binary (`gnirehtet`) will be located in the same directory where the script is executed.
+Compiled binary (named `gnirehtet`) will be located in the same directory where the script is executed.
 
 ### gnirehtet android app
 
-Normally gnirehtet android app would works on most device so you don't need to build it yourself. The apk file in this repository is [official gnirehtet release](https://github.com/Genymobile/gnirehtet/releases).
+Normally gnirehtet android app would works on most device so you don't need to build it yourself. The apk file in this repository is from [official gnirehtet release](https://github.com/Genymobile/gnirehtet/releases).
 
 To build android app: [gnirehtet/DEVELOP.md](https://github.com/Genymobile/gnirehtet/blob/master/DEVELOP.md)
 
