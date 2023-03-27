@@ -10,7 +10,7 @@
 1. Download file from [release](https://github.com/AlphaBs/termux-gnirehtet/releases) and extract it.
 2. Run `./install`.
 3. [Connect to device](#USB-ADB-Connecting).
-4. Run `./gnirehtet start`.
+4. Run `./gnirehtet run`.
 
 ## USB ADB Connecting
 

@@ -37,7 +37,7 @@ if [ confirm ]; then
         cp ./adb-samsung $PREFIX/bin/adb;
     else
         echo "Make sure to specify ADB every time you use gnirehtet. like this: "
-        echo "ADB=adb-samsung ./gnirehtet start";
+        echo "ADB=adb-samsung ./gnirehtet run";
     fi
 else
     echo -n "Would you like to create a symbolic link for 'adb' command? ";
@@ -45,7 +45,7 @@ else
         ln -s "$PREFIX/bin/termux-adb" "$PREFIX/bin/adb";
     else
         echo "Make sure to specify ADB every time you use gnirehtet. like this: ";
-        echo "ADB=termux-adb ./gnirehtet start";
+        echo "ADB=termux-adb ./gnirehtet run";
     fi
 fi
 
