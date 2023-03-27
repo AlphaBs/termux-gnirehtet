@@ -8,7 +8,7 @@
 ## Usage
 
 1. Download file from [release](https://github.com/AlphaBs/termux-gnirehtet/releases) and extract it.
-2. Run `./install`.
+2. Run `./install.sh`.
 3. [Connect to device](#USB-ADB-Connecting).
 4. Run `./gnirehtet run`.
 
@@ -29,7 +29,7 @@ Tethered deivce: The device want to connect to internet through 'tethering devic
 
 ## How it works
 
-`gnirehtet` was originally for reverse-tethering, sharing PC's internet connection to Android device, using `adb`. I recompiled `gnirehtet` to make it executable on Termux (aarch64).
+`gnirehtet` was originally for reverse-tethering, sharing PC's internet connection to Android device, using `adb`. I recompiled `gnirehtet` to make it executable on aarch64 Termux.
 
 To run `adb` and connect to another device on Android, I used `termux-adb`.
 
@@ -42,7 +42,7 @@ The binary of relay server (`gnirehtet`) in this repository was built for Termux
 To build relay server:
 
 1. Install [cargo](https://rustup.rs/) to build Rust.
-2. Run `build-gnirehtet` script.
+2. Run `build-gnirehtet.sh` script.
 
 Compiled binary (named `gnirehtet`) will be located in the same directory where the script is executed.
 

@@ -34,10 +34,10 @@ echo -n "Is your device running Samsung's Android? ";
 if [ confirm ]; then
     echo "Do you want to replace the 'adb' command with the new one? It will automatically fix the socket bug of Samsung devices.";
     if [ confirm ]; then
-        cp ./adb-samsung $PREFIX/bin/adb;
+        cp ./adb-samsung.sh $PREFIX/bin/adb;
     else
         echo "Make sure to specify ADB every time you use gnirehtet. like this: "
-        echo "ADB=adb-samsung ./gnirehtet run";
+        echo "ADB=adb-samsung.sh ./gnirehtet run";
     fi
 else
     echo -n "Would you like to create a symbolic link for 'adb' command? ";
