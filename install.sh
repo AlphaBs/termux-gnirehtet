@@ -30,21 +30,18 @@ if [ ! -f "$TERMUX_ADB" ]; then
     exit;
 fi
 
-echo -n "Is your device running Samsung's Android? ";
-if [ confirm ]; then
-    echo "Do you want to replace the 'adb' command with the new one? It will automatically fix the socket bug of Samsung devices.";
-    if [ confirm ]; then
+if confirm "Is your device running Samsung's Android?"; then
+    if confirm "Replace 'adb' with 'termux-adb'? (recommended)"; then
         cp ./adb-samsung.sh $PREFIX/bin/adb;
     else
-        echo "Make sure to specify ADB every time you use gnirehtet. like this: "
+        echo "Set up ADB before each use of gnirehtet:"
         echo "ADB=adb-samsung.sh ./gnirehtet run";
     fi
 else
-    echo -n "Would you like to create a symbolic link for 'adb' command? ";
-    if [ confirm ]; then
+    if confirm "Create a symbolic link for 'adb' command?"; then
         ln -s "$PREFIX/bin/termux-adb" "$PREFIX/bin/adb";
     else
-        echo "Make sure to specify ADB every time you use gnirehtet. like this: ";
+        echo "Set up ADB before each use of gnirehtet:";
         echo "ADB=termux-adb ./gnirehtet run";
     fi
 fi
