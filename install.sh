@@ -2,7 +2,7 @@
 
 confirm() {
     # call with a prompt string or use a default
-    read -r -p "${1:-Are you sure?} [y/N]" response
+    read -r -p "${1:-Are you sure?} [y/N] " response
     case "$response" in
         [yY][eE][sS]|[yY]) 
             true
@@ -23,6 +23,7 @@ fi
 
 if [ ! -f "$TERMUX_ADB" ]; then
     curl -s https://raw.githubusercontent.com/nohajc/termux-adb/master/install.sh | bash || exit;
+    $TERMUX_ADB
 fi
 
 if [ ! -f "$TERMUX_ADB" ]; then
